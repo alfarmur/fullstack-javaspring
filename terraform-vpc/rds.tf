@@ -3,7 +3,7 @@ resource "aws_db_instance" "rds" {
   identifier = "user-data"
   db_subnet_group_name   = aws_db_subnet_group.sub-grp.id
   engine                 = "mysql"
-  engine_version         = "8.0.36"
+  engine_version         = "8.0"
   instance_class         = "db.t3.micro"
   multi_az               = true
   db_name                = "mydb"
